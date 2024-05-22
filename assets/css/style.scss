@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ft-sans);
+}
+
+:root {
+  --ft-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Noto Sans", 
+  Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+  --ft-xxl: 4.8rem;
+  --ft-xl: 3.6rem;
+  --ft-l: 2.4rem;
+  --ft-m: 1.8rem; 
+  
+  --clr-bg-dark: #1f2937;
+  --clr-bg-btn: #3882f6;
+  --clr-bg-quote: #e5e7eb;
+
+  --clr-txt-main: #e5e7eb;
+  --clr-txt-dark: #1f2937;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+[class*="pad-0-15"]{
+  padding: 0% 15%;
+}
+
+// Text Size Section
+
+h1 {
+  font-size: var(--ft-xxl);
+}
+
+h2 {
+  font-size: var(--ft-xl);
+}
+
+p, a, li {
+  font-size: var(--ft-m);
+}
+
+// Header Section
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--clr-bg-dark);
+  gap: 2.4rem;
+}
+
+header a {
+  padding: 1.8rem 0;
+  text-decoration: none;
+  color: var(--clr-txt-main);
+}
+
+#header-logo {
+  margin-right: auto;
+  font-size: var(--ft-l);
+  font-weight: 800;
+}
