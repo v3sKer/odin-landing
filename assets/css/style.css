@@ -8,15 +8,17 @@
 :root {
   --ft-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Noto Sans",
   Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --ft-xxl: 4.8rem;
-  --ft-xl: 3.6rem;
-  --ft-l: 2.4rem;
-  --ft-m: 1.8rem;
+  --ft-xxl: 6.4rem;
+  --ft-xl: 4.8rem;
+  --ft-l: 3.6rem;
+  --ft-m: 2.7rem;
   --clr-bg-dark: #1f2937;
   --clr-bg-btn: #3882f6;
   --clr-bg-quote: #e5e7eb;
   --clr-txt-main: #e5e7eb;
+  --clr-txt-secondary: #e5e7eb;
   --clr-txt-dark: #1f2937;
+  --clr-txt-dark-secondary: #6f7077;
 }
 
 html {
@@ -45,6 +47,7 @@ header {
   align-items: center;
   background-color: var(--clr-bg-dark);
   gap: 2.4rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 header a {
@@ -65,8 +68,7 @@ header a:hover {
 
 .hero {
   background-color: var(--clr-bg-dark);
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding: 7.5% 15%;
   display: flex;
   flex-wrap: wrap;
   gap: 5%;
@@ -75,22 +77,23 @@ header a:hover {
 .hero-text {
   display: flex;
   flex-direction: column;
-  flex: 1 1 300px;
+  flex: 1 1 460px;
   gap: 2.4rem;
+  padding: 24px 0;
   color: #f9faf8;
 }
 
 .hero-text h1 {
-  line-height: 4.2rem;
+  line-height: 5.8rem;
 }
 
 .hero-text button {
   padding: 0.8rem;
-  width: 120px;
+  width: 180px;
   background-color: var(--clr-bg-btn);
   color: var(--clr-txt-main);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: var(--ft-m);
   font-weight: 700;
   cursor: pointer;
@@ -103,13 +106,50 @@ header a:hover {
 }
 
 .hero-image {
-  flex: 1 1 300px;
-  height: 220px;
+  flex: 1 1 460px;
+  height: 350px;
   border-radius: 12px;
   overflow: hidden;
 }
 
 .hero-image img {
-  width: 700px;
-  object-fit: contain;
+  height: 600px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h2 {
+  padding: 64px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.info-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 160px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 240px;
+  text-align: center;
+  gap: 12px;
+  color: var(--clr-txt-dark-secondary);
+  font-weight: 500;
+}
+
+.info-card i {
+  font-size: 4.8rem;
+  padding: 9rem 2.4rem;
+  border: 6px solid var(--clr-bg-btn);
+  border-radius: 24px;
 }/*# sourceMappingURL=style.css.map */
