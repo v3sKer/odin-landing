@@ -16,7 +16,7 @@
   --clr-bg-btn: #3882f6;
   --clr-bg-quote: #e5e7eb;
   --clr-txt-main: #e5e7eb;
-  --clr-txt-secondary: #e5e7eb;
+  --clr-txt-secondary: #dcdde3;
   --clr-txt-dark: #1f2937;
   --clr-txt-dark-secondary: #6f7077;
 }
@@ -101,7 +101,8 @@ header a:hover {
 }
 
 .hero-text button:hover {
-  background-color: #1871fe;
+  background-color: var(--clr-txt-main);
+  color: var(--clr-bg-btn);
   transition: 0.2s;
 }
 
@@ -176,4 +177,48 @@ header a:hover {
   text-align: end;
   font-weight: 600;
   padding-right: 4.8rem;
+}
+
+.callout-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 5% 10%;
+  margin: 10% 0;
+  background-color: var(--clr-bg-btn);
+  border-radius: 12px;
+}
+
+.callout-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.callout-text h3 {
+  font-size: var(--ft-l);
+  color: var(--clr-txt-main);
+}
+
+.callout-text p {
+  color: var(--clr-txt-secondary);
+}
+
+.callout-wrapper button {
+  padding: 0.8rem;
+  width: 180px;
+  background-color: var(--clr-bg-btn);
+  color: var(--clr-txt-main);
+  border: 4px solid var(--clr-txt-main);
+  border-radius: 10px;
+  font-size: var(--ft-m);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.callout-wrapper button:hover {
+  color: var(--clr-bg-btn);
+  background-color: var(--clr-txt-main);
+  transition: 0.2s;
 }/*# sourceMappingURL=style.css.map */
