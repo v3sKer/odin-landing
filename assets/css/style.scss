@@ -144,7 +144,7 @@ header a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 64px;
   margin-bottom: 160px;
 }
 
@@ -163,4 +163,30 @@ header a:hover {
   padding: 9rem 2.4rem;
   border: 6px solid var(--clr-bg-btn);
   border-radius: 24px;
+}
+
+// Quote Section
+
+.quote {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10% inherit;
+  background-color: var(--clr-bg-quote);
+}
+
+.quote-wrapper {
+  padding: 10%;
+}
+
+.quote h3 {
+  font-size: var(--ft-xl);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--clr-txt-dark);
+}
+
+.quote p {
+  text-align: end;
+  font-weight: 600;
+  padding-right: 4.8rem;
 }
